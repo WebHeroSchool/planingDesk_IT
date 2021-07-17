@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  border: dashed 1px red;
+  width: 80%;
+  margin: auto;
+}
+
+.header {
+  border: dashed 1px red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo,
+.menu {
+  border: dashed 1px red;
+}
+
+.logo {
+  padding: 40px 0;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  border: dashed 1px red;
+  padding: 0 13px;
+}
+
+.menu__item:last-child {
+  padding-right: 0;
+}
+
+.main-section {
+  border: dashed 1px red;
+}
+
+.main-content {
+}
+
+.main-content__title {
+  font-family: "Roboto", sans-serif;
+}
+
+.main-content__subtitle {
+}
+
+.main-content__button {
+}
+
+.image-content {
+}
+
+.image-content__image {
+}
