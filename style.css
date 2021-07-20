@@ -12,6 +12,7 @@ body {
   border: dashed 1px red;
   display: flex;
   justify-content: space-between;
+  padding: 40px 0;
 }
 
 .logo,
@@ -21,6 +22,30 @@ body {
 
 .logo {
   padding: 40px 0;
+  padding-left: 44px;
+  position: relative;
+  font: bold 24px/31px "pt_serif", arial, helvetica, sans-serif;
+}
+
+.logo__circle {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+
+.logo__circle_color_dark-blue {
+  background: #0056ec;
+}
+
+.logo__circle_color_blue {
+  top: 56%;
+  left: 8px;
+  background: #c8dbfb;
 }
 
 .menu {
