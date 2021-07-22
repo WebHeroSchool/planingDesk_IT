@@ -3,21 +3,14 @@ body {
 }
 
 .wrapper {
-  border: dashed 1px red;
   width: 80%;
   margin: auto;
 }
 
 .header {
-  border: dashed 1px red;
   display: flex;
   justify-content: space-between;
   padding: 40px 0;
-}
-
-.logo,
-.menu {
-  border: dashed 1px red;
 }
 
 .logo {
@@ -54,17 +47,50 @@ body {
 }
 
 .menu__item {
-  border: dashed 1px red;
-  padding: 0 13px;
+  position: relative;
+  margin-right: 26px;
+  font: 500 18px/21px "Roboto", arial, helvetica, sans-serif;
+  text-decoration: none;
+  color: #000;
+  transition: opacity 0.5s;
+}
+
+.menu__item:after {
+  position: absolute;
+  display: block;
+  content: "";
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #0056ec;
+  opacity: 0;
+  transition: opacity 0.5s, width 0.5s;
+}
+
+.menu__item:hover {
+  opacity: 0.5;
+}
+
+.menu__item:hover:after,
+.menu__item_active::after {
+  opacity: 1;
+  width: 100%;
+}
+
+.menu__item_active::after {
+  position: absolute;
+  display: block;
+  content: "";
+  left: 0;
+  height: 3px;
+  background: #0056ec;
 }
 
 .menu__item:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 
-.main-section {
-  border: dashed 1px red;
-}
+/* .main-section  */
 
 /* .main-content */
 
