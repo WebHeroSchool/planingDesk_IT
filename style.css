@@ -98,9 +98,10 @@ body {
 }
 
 .main {
-  padding: 106px 66% 100px 3px;
+  padding: 106px 66% 163px 3px;
   background: right 32px no-repeat url("img/mainimg.svg");
-  background-size: 50%;
+  background-size: 50.2%;
+  margin-bottom: 100px;
 }
 
 .main__title {
@@ -120,8 +121,8 @@ body {
 
 .main__button {
   display: inline-block;
-  padding: 14px 16px;
-  font: 14px/16px "Roboto", arial, helvetica, sans-serif;
+  padding: 20px 36px 18px 23px;
+  font: 18px/21px "Roboto", arial, helvetica, sans-serif;
   color: #fff;
   background: #0056ec;
   border-radius: 4px;
@@ -131,4 +132,18 @@ body {
 
 .main__button:hover {
   opacity: 0.5;
+}
+
+.footer__points {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__points_item {
+  margin-right: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #c8dbfb;
+  opacity: 0.7;
 }
