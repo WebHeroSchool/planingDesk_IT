@@ -147,3 +147,335 @@ body {
   background: #c8dbfb;
   opacity: 0.7;
 }
+
+.hamburger-menu {
+  display: none;
+}
+
+@media (max-width: 1908px) {
+  .main {
+    padding: 106px 64% 163px 3px;
+  }
+}
+
+@media (max-width: 1901px) {
+  .main__title {
+    font: bold 64px/84px "pt_serif", arial, helvetica, sans-serif;
+  }
+  .main__subtitle {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1825px) {
+  .main__subtitle {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1732px) {
+  .main__title {
+    font: bold 62px/82px "pt_serif", arial, helvetica, sans-serif;
+  }
+  .main__subtitle {
+    width: 88%;
+  }
+}
+
+@media (max-width: 1678px) {
+  .main {
+    padding: 106px 60% 163px 3px;
+  }
+}
+
+@media (max-width: 1510px) {
+  .main {
+    padding: 106px 55% 163px 3px;
+  }
+}
+
+@media (max-width: 1367px) {
+  .logo {
+    padding-left: 123px;
+  }
+  .logo__circle_color_blue {
+    left: 90px;
+  }
+  .logo__circle_color_dark-blue {
+    left: 82px;
+  }
+  .menu__item {
+    font: 500 14px/16px "Roboto", arial, helvetica, sans-serif;
+  }
+  .menu__item:last-child {
+    margin-right: 87px;
+  }
+  .main {
+    background: top right 81px no-repeat url(img/mainimg1366.svg);
+    padding: 16px 55% 110px 81px;
+    margin-bottom: 24px;
+  }
+  .main__title {
+    font: bold 50px/66px "pt_serif", arial, helvetica, sans-serif;
+  }
+  .main__subtitle {
+    width: 90%;
+    font: 500 18px/20px "Roboto", arial, helvetica, sans-serif;
+  }
+  .header {
+    margin-bottom: 84px;
+  }
+  .main__button {
+    padding: 15px 27px 15px 16px;
+    font: 500 14px/16px "Roboto", arial, helvetica, sans-serif;
+  }
+  .footer__points {
+    padding-top: 12px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .wrapper {
+    width: 92%;
+  }
+  .logo {
+    padding-left: 45px;
+  }
+  .logo__circle_color_dark-blue {
+    left: 5px;
+  }
+  .logo__circle_color_blue {
+    left: 13px;
+  }
+  .menu__item {
+    font: 500 14px/16px "Roboto", arial, helvetica, sans-serif;
+  }
+  .menu__item:last-child {
+    margin-right: 6px;
+  }
+  .main {
+    background: top right 6px no-repeat url(img/mainimg1024.svg);
+    padding: 18px 55% 120px 5px;
+    margin-bottom: 14px;
+  }
+  .main__button {
+    padding: 15px 26px 14px 16px;
+  }
+  .footer__points {
+    padding-left: 4px;
+  }
+}
+
+@media (max-width: 1301px) {
+  .main__title {
+    font: bold 47px/63px "pt_serif", arial, helvetica, sans-serif;
+  }
+  .main__subtitle {
+    width: 93%;
+    font: 500 17px/19px "Roboto", arial, helvetica, sans-serif;
+  }
+}
+
+@media (max-width: 1237px) {
+  .main {
+    padding: 16px 57% 110px 81px;
+    background-size: 47%;
+  }
+  .main__title {
+    font: bold 41px/59px "pt_serif", arial, helvetica, sans-serif;
+  }
+  .main__subtitle {
+    width: 98%;
+    font: 500 15px/17px "Roboto", arial, helvetica, sans-serif;
+  }
+}
+
+@media (max-width: 1159px) {
+  .main__title {
+    font: bold 37px/56px "pt_serif", arial, helvetica, sans-serif;
+  }
+  .main__subtitle {
+    width: 97%;
+    font: 500 14px/16px "Roboto", arial, helvetica, sans-serif;
+  }
+}
+
+@media (max-width: 929px) {
+  .main {
+    padding: 16px 55% 110px 81px;
+  }
+}
+
+@media (max-width: 806px) {
+  .main {
+    padding: 16px 49% 110px 81px;
+  }
+}
+
+@media (max-width: 769px) {
+  .menu {
+    display: none;
+  }
+  .hamburger-menu {
+    display: flex;
+  }
+  .header {
+    margin-bottom: 24px;
+  }
+  .main {
+    text-align: center;
+    background-position: top center;
+    background-size: 74%;
+    padding: 74% 0 0;
+  }
+  .main__title {
+    margin: 0 auto 44px;
+    width: 41%;
+    font: bold 33px/44px "pt_serif", arial, helvetica, sans-serif;
+  }
+  .main__subtitle {
+    width: 35%;
+    margin: 0 auto 25px;
+    font: 500 16px/19px "Roboto", arial, helvetica, sans-serif;
+  }
+  .main__button {
+    margin-bottom: 43px;
+  }
+  .footer__points {
+    display: none;
+  }
+
+  /* MY HAMBURGER MENU */
+  /* скрываем чекбокс */
+  #menu__toggle {
+    opacity: 0;
+  }
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 40px;
+    right: 24px;
+    width: 29px;
+    height: 23px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #0056ec;
+    transition-duration: 0.2s;
+  }
+
+  .menu__btn > span::before {
+    content: "";
+    transform: translateY(8px);
+  }
+
+  .menu__btn > span::after {
+    content: "";
+    transform: translateY(-8px);
+  }
+  /* контейнер меню */
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: rgba(236, 239, 241, 0.5);
+    box-shadow: 6px 0px 10px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.25s;
+  }
+  /* элементы меню */
+  .menu__box_item {
+    display: block;
+    padding: 12px 24px;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    transition-duration: 0.25s;
+  }
+  .menu__box_item:hover {
+    background-color: #cfd8dc;
+    padding: 15px 0 15px;
+    transition: 0.5s;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    opacity: 0;
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    right: 0;
+  }
+}
+
+@media (max-width: 376px) {
+  .logo__text {
+    display: none;
+  }
+  .logo__circle_color_dark-blue {
+    left: 9px;
+    top: 38px;
+  }
+  .logo__circle_color_blue {
+    left: 17px;
+    top: 45px;
+  }
+  .menu__btn {
+    top: 33px;
+    right: 24px;
+    width: 25px;
+    height: 17px;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    width: 25px;
+    height: 3px;
+  }
+  .main {
+    background-size: 81%;
+    padding: 72% 0 0;
+  }
+  .header {
+    margin-bottom: 7px;
+  }
+  .main__title {
+    margin: 0 auto 13px;
+    padding: 12px 0px 0px 6px;
+    width: 80%;
+    font: bold 30px/40px "pt_serif", arial, helvetica, sans-serif;
+  }
+  .main__subtitle {
+    width: 72%;
+    margin: 0px 51px 24px;
+    padding-top: 19px;
+  }
+  .main__button {
+    padding: 15px 25px 15px 18px;
+  }
+}
