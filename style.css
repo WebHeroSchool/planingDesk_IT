@@ -227,6 +227,7 @@ body {
   .main__title {
     font: bold 62px/82px "pt_serif", arial, helvetica, sans-serif;
   }
+
   .main__subtitle {
     width: 88%;
   }
@@ -461,7 +462,7 @@ body {
   }
 
   .header {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .logo__text {
@@ -556,6 +557,7 @@ body {
     text-decoration: none;
     transition-duration: 0.25s;
   }
+
   .menu__box_item:hover {
     background-color: #cfd8dc;
     padding: 15px 0 15px;
